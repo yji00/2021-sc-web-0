@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* font-family: 'Lato', sans-serif; */
+
+/************** default ***************/
+html,body{font:16px  'Lato', sans-serif; color: #121212;}
+.wrapper{max-width: 1100px; margin: auto;}
+.wrapper0{margin: 4rem .5rem; }
+
+
+/************** header-wrapper ***************/
+.header-wrapper{position: fixed; width: 100%; padding: 0.5em 0.95em; font-size: 14px; letter-spacing: 3px;
+background-color: #f9f9f9; box-shadow: 0 0 10px rgba(0, 0, 0, .5); z-index: 10;}
+.header-wrapper > .home-wrapper{float: left;}
+/* .header-wrapper > .home-wrapper > .home{ padding: 0.925em 1.5em;} */
+.header-wrapper > .home-wrapper > .home > a{padding: 0.925em 1.5em;}
+.header-wrapper > .home-wrapper > .home:hover {background-color: rgb(219, 219, 219);}
+.header-wrapper > .navi-wrapper{float: right; }
+.header-wrapper > .navi-wrapper > .navi{float: left;}
+.header-wrapper > .navi-wrapper > .navi > a {padding: 0.925em 1.5em;}
+.header-wrapper > .navi-wrapper > .navi:hover{background-color:  rgb(219, 219, 219);;}
+
+/************** main-wrapper ***************/
+.main-wrapper {position: relative; max-width: 1400px; margin: auto; }
+.main-wrapper .main-img {width: 100%;}
+.main-wrapper .main-title {font-size: 36px; color: #777; position: absolute; left: 20px; bottom: 30px; letter-spacing: 5px;}
+
+/************** about-wrapper ***************/
+.about-wrapper{border-bottom: 1px solid #ccc;}
+/* .about-wrapper > .about-wrap{margin: 4em 1em; } */
+.about-wrapper > .about-wrap >.about-img{ float: left; width: 50%; padding: 1em 1.5em; opacity: .7; }
+.about-wrapper > .about-wrap >.about-img > .img{border-radius: 4px;}
+.about-wrapper .about-text {float: right; width: 50%; padding: 1em 1.5em; text-align: center; line-height: 1.5;}
+.about-wrapper .about-text > :nth-child(1) {font-size: 2.25em; margin: .5em 0; letter-spacing: 5px;}
+.about-wrapper .about-text > :nth-child(2) {font-size: 1.125em; margin-top: 3em; margin-bottom: .5em;letter-spacing: 5px;}
+.about-wrapper .about-text > :nth-child(3) {font-size: 1.125em; margin: 2em 0; text-align: left; line-height: 1.5;}
+.about-wrapper .about-text > :nth-child(3) > span {background-color: rgb(241, 241, 241);}
+.about-wrapper .about-text > :nth-child(4) {font-size: 1.125em; color: #777; text-align: left; line-height: 1.5;}
+
+/************** menu-wrapper ***************/
+.menu-wrapper{border-bottom: 1px solid #ccc;}
+.menu-wrapper > .menu-wrap{}
+.menu-wrapper > .menu-wrap > ul.mtext-wrap{float: left; width: 50%; padding: 1em 1.5em; line-height: 1.5;}
+.menu-wrapper > .menu-wrap > ul.mtext-wrap > li.menu-text{text-align: center; font-size: 2.25rem; letter-spacing: 5px; margin-top: 0.625rem; margin-bottom: 3.5rem;}
+.menu-wrapper > .menu-wrap > ul.mtext-wrap > li.text-title{font-size: 1.3rem; letter-spacing: 5px; margin: 0.925rem 0;}
+.menu-wrapper > .menu-wrap > ul.mtext-wrap > li.text{margin-top: 1rem; margin-bottom: 3rem; color: #777; font-size: 0.97rem;}
+.menu-wrapper > .menu-wrap .menu-img{float: right; width: 50%; padding: 1em 1.5em; opacity: .7;}
+.menu-wrapper > .menu-wrap .menu-img > .img{border-radius: 4px;}
+
+/************** contact-wrapper ***************/
+.contact-wrapper{}
+.contact-wrapper  .text-wrap{}
+.contact-wrapper  .text-wrap > .contact-title{font-size: 2.25rem; letter-spacing: 5px; margin-top: 0.625rem; margin-bottom: 3.5rem; line-height: 1.5;}
+.contact-wrapper  .text-wrap > :nth-child(2) {font-size: 0.85rem; line-height: 1.5;margin-bottom: 1.5rem;}
+.contact-wrapper  .text-wrap > :nth-child(3) {color: #607d8b!important; margin-bottom: 1.5rem; font-weight: bold;}
+.contact-wrapper  .text-wrap > :nth-child(4) {font-size: 0.85rem; line-height: 1.5;margin-bottom: 1.5rem;}
+.contact-wrapper   form{}
+.contact-wrapper   form :not(:last-child) {width: 100%; border-bottom: 1px solid #ccc; padding: 1rem 0.5rem; margin: 1rem 0; font-size: 0.85rem;}
+.contact-wrapper   form button{background-color: #f1f1f1; padding: 0.5rem 1rem; margin: 1rem 0; font-size: 0.85rem;}
+.contact-wrapper   form button:hover{background-color: #ccc;}
+
+/************** footer-wrapper ***************/
+.footer-wrapper{padding: 2rem 0; background-color: #f1f1f1;}
+.footer-wrapper > h2.footer-text{margin: 2rem 0; text-align: center; font-size: 0.85rem;}
+.footer-wrapper > h2.footer-text > a{text-decoration: underline;}
+
+
+/************** response ***************/
+/* @media (max-width: 1100px) {
+    .wrapper{margin: 0;}
+} */
+
+@media (max-width: 600px) {
+    .header-wrapper > .navi-wrapper{display: none;}
+    .about-wrapper > .about-wrap >.about-img{display: none;}
+    .about-wrapper .about-text {width: 100%;}
+    .menu-wrapper > .menu-wrap > ul.mtext-wrap{width: 100%;}
+    .menu-wrapper > .menu-wrap .menu-img{width: 100%;}
+}
