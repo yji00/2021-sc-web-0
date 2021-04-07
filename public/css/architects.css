@@ -65,7 +65,8 @@ margin-bottom: 1rem;}
 .contact-wrapper .form-wrap > button{background-color: #111; margin: 1rem 0; padding: 0.725rem 1rem; color: #f1f1f1;}
 
 /* map */
-.map-wrapper{margin:0 1em;}
+.map-wrapper{margin:0 auto;}
+.map-wrapper > .map-wrap {margin: 0 1rem;}
 
 /* footer */
 .footer-wrapper{background-color: #111; padding: 2rem;}
